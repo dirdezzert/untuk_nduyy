@@ -1,0 +1,611 @@
+body {
+    background-color: #eaf6ff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+
+    color: #5b6673;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+}
+
+
+/* HEADER */
+
+.header {
+    background-color: #cfe9ff;
+    text-align: center;
+
+    padding: 35px 20px;
+
+    border-radius: 25px;
+
+    margin-bottom: 20px;
+}
+
+
+.header h1 {
+    color: #668baa;
+}
+
+
+.big-heart {
+    font-size: 60px;
+    color: #ee9db1;
+}
+
+
+/* FOTO */
+
+.photo-card {
+    background-color: #fff0f5;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+.photo-card h2 {
+    color: #d9879c;
+}
+
+
+/* TEMPAT POLAROID */
+
+.polaroid-container {
+    position: relative;
+
+    width: 250px;
+    height: 310px;
+
+    margin: 30px auto;
+
+    cursor: grab;
+}
+
+
+/* POLAROID */
+
+.polaroid {
+    position: absolute;
+
+    width: 220px;
+
+    background-color: white;
+
+    padding: 10px;
+    padding-bottom: 25px;
+
+    box-shadow: 0 5px 12px rgba(100, 120, 140, 0.2);
+
+    transition: 0.4s;
+
+    left: 15px;
+    top: 10px;
+}
+
+
+.polaroid img {
+    width: 220px;
+    height: 240px;
+
+    object-fit: cover;
+}
+
+
+/* TULISAN DI BAWAH FOTO */
+
+.polaroid p {
+    margin: 10px 0 0;
+
+    font-size: 13px;
+
+    color: #777;
+}
+
+
+/* POSISI AWAL 3 FOTO */
+
+.photo1 {
+    transform: rotate(-5deg);
+
+    z-index: 3;
+}
+
+
+.photo2 {
+    transform: rotate(4deg);
+
+    z-index: 2;
+
+    left: 20px;
+    top: 5px;
+}
+
+
+.photo3 {
+    transform: rotate(-8deg);
+
+    z-index: 1;
+
+    left: 10px;
+    top: 15px;
+}
+
+
+/* TEKS */
+
+.swipe-text {
+    color: #9b9b9b;
+
+    font-size: 13px;
+}
+
+
+
+.cute-photo img {
+    width: 220px;
+    height: 260px;
+    object-fit: cover;
+
+    border: 8px solid white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(100, 120, 140, 0.2);
+
+    transform: rotate(-2deg);
+}
+
+.photo-card h2 {
+    color: #d9879c;
+}
+
+
+/* CARD */
+
+.card {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    margin-bottom: 20px;
+
+    line-height: 1.7;
+}
+
+
+.card h2 {
+    color: #779dbb;
+}
+
+
+.card h3 {
+    text-align: center;
+
+    color: #df8da3;
+}
+
+
+.pink-text {
+    background-color: #fde9ef;
+
+    padding: 15px;
+
+    border-radius: 15px;
+
+    color: #c9798e;
+}
+
+
+/* CLICK GAME */
+
+.game-card {
+
+    background-color: #d9f0ff;
+
+    text-align: center;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    margin-bottom: 20px;
+}
+
+
+.game-card h2 {
+    color: #638eae;
+}
+
+
+button {
+
+    border: none;
+
+    background-color: #f3b4c6;
+
+    color: white;
+
+    padding: 12px 17px;
+
+    border-radius: 20px;
+
+    margin: 5px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+
+button:hover {
+
+    background-color: #df91a8;
+
+}
+
+
+#result {
+
+    background-color: white;
+
+    padding: 18px;
+
+    border-radius: 15px;
+
+    margin-top: 15px;
+
+    min-height: 20px;
+
+    color: #c7758c;
+
+    font-weight: bold;
+}
+
+
+/* LOVE */
+
+.love-card {
+
+    background-color: #ffeef4;
+
+    text-align: center;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    margin-bottom: 20px;
+}
+
+
+.love-card h2 {
+
+    color: #db849b;
+
+}
+
+
+#loveResult {
+
+    margin-top: 15px;
+
+    font-size: 18px;
+}
+
+
+/* YOUTUBE */
+
+.youtube-card {
+
+    background-color: #e2f4ff;
+
+    text-align: center;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    margin-bottom: 20px;
+}
+
+
+.youtube-card h2 {
+
+    color: #638bab;
+
+}
+
+
+.youtube-button {
+
+    display: inline-block;
+
+    background-color: #88c7e6;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 13px 20px;
+
+    border-radius: 20px;
+
+    margin-top: 10px;
+}
+
+
+.youtube-button:hover {
+
+    background-color: #65afd4;
+
+}
+
+
+/* WHATSAPP */
+
+.whatsapp-card {
+
+    background-color: white;
+
+    text-align: center;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    margin-bottom: 20px;
+}
+
+
+.phone {
+
+    font-size: 55px;
+}
+
+
+.whatsapp-card h2 {
+
+    color: #d9849a;
+
+}
+
+
+.wa-button {
+
+    display: inline-block;
+
+    background-color: #9ed8b5;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 14px 25px;
+
+    border-radius: 25px;
+
+    margin-top: 10px;
+
+    font-weight: bold;
+}
+
+
+.wa-button:hover {
+
+    background-color: #7fc79b;
+
+}
+
+
+.small {
+
+    font-size: 12px;
+
+    color: #9a9a9a;
+
+    margin-top: 15px;
+}
+
+
+/* HUG */
+
+.hug-card {
+
+    background-color: #dff2ff;
+
+    text-align: center;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    margin-bottom: 20px;
+}
+
+
+.hug-card h2 {
+
+    color: #668eae;
+
+}
+
+
+#hugResult {
+
+    margin-top: 15px;
+
+    color: #d17d92;
+
+    font-weight: bold;
+
+    line-height: 1.6;
+}
+
+
+/* END */
+
+.ending {
+
+    background-color: #fceaf0;
+
+    text-align: center;
+
+    padding: 35px 20px;
+
+    border-radius: 25px;
+
+}
+
+
+.ending h2 {
+
+    color: #d67f96;
+
+}
+
+
+.ending h1 {
+
+    font-size: 40px;
+
+}
+
+
+footer {
+
+    text-align: center;
+
+    padding: 20px;
+
+    color: #91a8ba;
+
+}
+
+/* FEELING CHECK */
+
+.feeling-card {
+
+    background-color: #fff4f7;
+
+    text-align: center;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    margin-bottom: 20px;
+}
+
+
+.feeling-card h2 {
+
+    color: #d98298;
+
+}
+
+
+.feeling-card h3 {
+
+    color: #7699b3;
+
+    margin-top: 25px;
+
+}
+
+
+.feelings {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    text-align: left;
+
+    max-width: 400px;
+
+    margin: auto;
+
+}
+
+
+.feelings label {
+
+    background-color: white;
+
+    padding: 13px;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+}
+
+
+.feelings input {
+
+    margin-right: 8px;
+
+}
+
+
+textarea {
+
+    width: 90%;
+
+    height: 100px;
+
+    resize: none;
+
+    border: none;
+
+    border-radius: 15px;
+
+    padding: 15px;
+
+    margin-bottom: 15px;
+
+    font-family: Arial, sans-serif;
+
+    box-sizing: border-box;
+
+}
+
+
+textarea:focus {
+
+    outline: 2px solid #f1b4c5;
+
+}
+
+
+.optional {
+
+    font-size: 12px;
+
+    color: #999;
+
+    margin-top: 15px;
+
+}
+
+
+#feelingResult {
+
+    color: #cf7d92;
+
+    font-weight: bold;
+
+    line-height: 1.6;
+
+}
